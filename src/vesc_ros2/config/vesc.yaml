@@ -1,0 +1,21 @@
+/**:
+  ros__parameters:
+    # === Connection Settings ===
+    port: /dev/ttyACM0          # USB port for your VESC (detected earlier)
+    baud_rate: 115200           # Communication speed
+
+    # === Motor Control Limits ===
+    duty_cycle_min: -0.25         # Minimum PWM duty cycle
+    duty_cycle_max: 0.25        # Maximum PWM duty cycle (start safe)
+    current_limit: 30.0         # Max motor current (A)
+    battery_current_limit: 20.0 # Max current drawn from battery (A)
+    brake_current_limit: -5.0   # Regenerative braking limit (A)
+
+    # === Battery and Power ===
+    battery_cut_start: 14.2     # Start reducing power (V)
+    battery_cut_end: 13.6       # Fully cut power at (V)
+
+    # === Wheel and Motion Parameters ===
+    wheel_radius: 0.10          # Wheel radius in meters (20 cm diameter)
+    gear_ratio: 1.0             # Adjust if gearbox used
+    erpm_max: 20000             # Max electrical RPM limit for safety

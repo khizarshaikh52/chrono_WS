@@ -1,0 +1,28 @@
+# ROS 2 workspaces
+build/
+install/
+log/
+
+# Python
+__pycache__/
+*.pyc
+
+# Editors & OS
+.vscode/
+.idea/
+.DS_Store
+
+# Big data/artifacts
+*.bag
+*.bag.active
+*.deb
+*.zip
+*.tar
+*.tar.gz
+*.tar.xz
+*.mp4
+*.mov
+*.avi
+*.csv
+*.npz
+*.npy
